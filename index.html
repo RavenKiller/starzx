@@ -40,11 +40,16 @@
 	</style>
 </head>
 <body>
+  <script>
+    $(document).ready(function () {
+      console.log($("#audio").played)
+    })
+  </script>
 	<div class="container form-bg">
 		<div class="col  offset-sm-2 col-sm-8">
 			<div class="form-horizontal">
 				<div class="form-group text-center">
-					<audio controls autoplay style="width:100%;">
+					<audio id="audio" controls autoplay="true" style="width:100%;">
 						<source src="static/audio/audio1.mp3" type="audio/mpeg">
 						您的浏览器不支持 audio 元素。
 					</audio>
