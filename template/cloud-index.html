@@ -5,10 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title></title>
-    <link rel="shortcut icon" href="static/image/cake.ico" type="image/x-icon">
-    <script src="static/js/jquery.min.js"></script>
-	<link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <script src="static/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="{{static_url('image/cake.ico') }}" type="image/x-icon">
+    <script src="{{static_url('js/jquery.min.js') }}"></script>
+	<link rel="stylesheet" href="{{static_url('css/bootstrap.min.css')}}">
+    <script src="{{static_url('js/bootstrap.min.js') }}"></script>
 	<style type="text/css">
         body { 
 			height: 100%; 
@@ -45,15 +45,15 @@
 			<div class="form-horizontal">
 				<div class="form-group text-center">
 					<audio controls autoplay style="width:100%;">
-						<source src="static/audio/audio1.mp3" type="audio/mpeg">
+						<source src="{{static_url('audio/audio1.mp3')}}" type="audio/mpeg">
 						您的浏览器不支持 audio 元素。
 					</audio>
 				</div>
 				<div class="form-group text-center">
-					<img src="static/image/2.jpg" alt="!" style="width:90%" />
+					<img src="{{static_url('image/2.jpg')}}" alt="!" style="width:90%" />
 				</div>
 				<div class="form-group text-center">
-					<img src="static/image/1.jpg" alt="!" style="width:90%" />
+					<img src="{{static_url('image/1.jpg')}}" alt="!" style="width:90%" />
 				</div>
 			</div>
 		</div>
