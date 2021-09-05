@@ -38,6 +38,15 @@
             }
         }
 	</style>
+  <script>
+    window.onload=function(){
+      setTimeout(function(){
+        if($("#audio").paused){
+          $("#audio").play();
+        }
+      }, 1000)
+    }
+  </script>
 </head>
 <body>
 	<div class="container form-bg">
