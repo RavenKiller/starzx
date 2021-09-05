@@ -2,59 +2,44 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title></title>
-    <link rel="shortcut icon" href="static/image/cake.ico" type="image/x-icon">
-    <script src="static/js/jquery.min.js"></script>
+  <link rel="shortcut icon" href="static/image/cake.ico" type="image/x-icon">
+  <script src="static/js/jquery.min.js"></script>
 	<link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
 	<style type="text/css">
-        body { 
+    body { 
 			height: 100%; 
-		    background: #00b4ef;
+		  background: #00b4ef;
 		}
 		.form-bg{
 			height: 100%;
-            width: 100%;
+      width: 100%;
 			padding: 20px 0;
 		}
 		.form-horizontal{
-		    background: #fff;
-		    border-radius: 15px;
-		    text-align: center;
-            font-size: 15px;
+      background: #fff;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 15px;
 			padding-bottom: 20px;
 			padding-top: 20px;
-            box-shadow: 0 4px 8px 4px rgba(0, 122, 163, 0.4);
+      box-shadow: 0 4px 8px 4px rgba(0, 122, 163, 0.4);
 		}
 		.form-horizontal .form-group{
-		    padding: 20px 40px 0 40px;
-		    position: relative;
+      padding: 20px 40px 0 40px;
+      position: relative;
 		}
-        @media screen and (min-width: 1400px) {
-            .container {
-                max-width: 2400px;
-            }
-        }
 	</style>
-  <script>
-    window.onload=function(){
-      var player = $("#audio")[0];
-      setTimeout(function(){
-        if(player.paused){
-          player.play();
-        }
-      }, 1000)
-    }
-  </script>
 </head>
 <body>
 	<div class="container form-bg">
 		<div class="col  offset-sm-2 col-sm-8">
 			<div class="form-horizontal">
 				<div class="form-group text-center">
-					<audio id="audio" controls autoplay="true" style="width:100%;">
+					<audio id="audio" controls="true" autoplay="true" loop="true" style="width:100%;">
 						<source src="static/audio/audio1.mp3" type="audio/mpeg">
 						您的浏览器不支持 audio 元素
 					</audio>
