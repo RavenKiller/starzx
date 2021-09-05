@@ -40,9 +40,10 @@
 	</style>
   <script>
     window.onload=function(){
+      var player = $("#audio")[0];
       setTimeout(function(){
-        if($("#audio").paused){
-          $("#audio").play();
+        if(player.paused){
+          player.play();
         }
       }, 1000)
     }
