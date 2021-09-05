@@ -3,7 +3,7 @@ import tornado.web
 import os
 current_path = os.path.dirname(os.path.abspath(__file__))
 settings = {
-    'template_path': current_path + '/template',
+    'template_path': current_path,
     'static_path': current_path + '/static'
 }
 class Index(tornado.web.RequestHandler):
